@@ -9,6 +9,7 @@ __pycache__/
 cred.txt
 artifacts/
 models/
+local_s3/
 
 
 # Distribution / packaging
