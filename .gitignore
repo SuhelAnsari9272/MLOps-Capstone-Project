@@ -12,6 +12,7 @@ models/
 local_s3/
 data/
 testing_models/
+reports/
 
 
 # Distribution / packaging
