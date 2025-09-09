@@ -8,8 +8,10 @@ __pycache__/
 
 cred.txt
 artifacts/
-models/
+models/ 
 local_s3/
+data/
+testing_models/
 
 
 # Distribution / packaging
