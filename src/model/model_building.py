@@ -4,7 +4,7 @@ import pickle
 from sklearn.linear_model import LogisticRegression
 import yaml
 from src.logger import logging
-
+import os
 
 def load_data(file_path: str) -> pd.DataFrame:
     """Load data from a CSV file."""
@@ -48,7 +48,8 @@ def main():
         y_train = train_data.iloc[:, -1].values
 
         clf = train_model(X_train, y_train)
-        
+
+        os.makedirs("models", exist_ok=True)
         save_model(clf, 'models/model.pkl')
     except Exception as e:
         logging.error('Failed to complete the model building process: %s', e)
